@@ -1,0 +1,16 @@
+step 1 -
+telegram => ngrok http 5005
+
+copy https url -> paste to credentials -> webhook_url -> repalce the previous link
+
+(Step 1 is to be done only if telegram chat bot is to be run)
+
+
+step 2 - 
+rasa run actions
+
+step 3 -
+rasa run -m models --enable-api --cors "*" --debug
+
+
+

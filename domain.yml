@@ -1,0 +1,509 @@
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
+intents:
+- greet
+- goodbye
+- eligibility
+- bot_challenge
+- courses_info_ug
+- courses_info_pg
+- courses_info_phd
+- salary_package
+- government_opportunities
+- company_info
+- roles_information
+- future_study
+- institute_information
+- institute_contact
+- AIDS_intake
+- hostel
+- approval
+- facilities
+- duration
+- compare
+- fee
+- subject
+- CET
+- own_CET
+- admission_process
+- application_process
+- counselling
+- seat_allotment
+- OM
+- quota
+- quality_education
+- program_design
+- branch_transfer
+- foreign_nationals
+- fee_structure_foreign_nationals_nri
+- fee_payment_foreign_nationals_nri
+- campus_placement_assistance
+- transport_facility
+- girls_hostel
+- hostel_fees
+- student_facilities
+- reach_vit
+- education_loan
+- name
+- contact_number
+- email
+- pcm_score
+- cet_score
+- jee_score
+- mode_of_payment
+- documents
+- AI
+- DS
+- degree_awarding
+- normal_pandemic_teaching
+- Extra_Curricular
+- student_achievement
+- pre_placement_training
+- out_of_scope
+entities:
+- name
+- contact
+- email
+- pcm
+- cet
+- jee
+slots:
+  cet:
+    type: unfeaturized
+    auto_fill: false
+  contact:
+    type: unfeaturized
+    auto_fill: false
+  email:
+    type: unfeaturized
+    auto_fill: false
+  name:
+    type: unfeaturized
+    auto_fill: false
+  pcm:
+    type: unfeaturized
+    auto_fill: false
+  jee:
+    auto_fill: false
+    type: unfeaturized
+responses:
+  utter_AIDS_intake:
+  - text: "The Intake For Btech in Artificial Intelligence and Data Science(AI & DS)
+      course is 120. The distribution of seats for any branch/course in Vishwakarma
+      Institute of Technology, Pune is (1) State level seats – 65% of intake,(2)
+      All India seats – 15% of intake,(3) Institute level seats – 20% of intake"
+  utter_CET:
+  - text: It is mandatory for a student to score in MHT-CET or JEE Main Paper I to
+      get admission in Vishwakarma Institute of Technology, Pune and registering and
+      securing merit number through DTE procedure is mandatory.
+  utter_OM:
+  - text: Yes. Following to rules of DTE students from outside Maharashtra may get
+      admissions in Vishwakarma of Technology, Pune
+  utter_admission_process:
+  - text: Please refer DTE website of State Common Entrance Test Cell, Maharashtra
+      State website (http://cetcell.mahacet.org)
+  utter_application_process:
+  - text: "1. The candidates should apply online on www.mahacet.org as per schedule.
+      \n2. Filling the Online Application Form for admission through their login which
+      is provided to them at the time of applying to the Common Entrance Test conducted
+      for that course. Candidates aspiring for admission on the basis of JEE 2020
+      (Main) Paper 1 (who could not register for MHT-CET 2020) should apply, by paying
+      required fees, through CAP under All India Seats or to be eligible for admission
+      under Institutional Quota seats. \n3. The candidate should fill the Online Application
+      Form by reading carefully the Information Brochure. \n4. After filling the information
+      and submission of Application Form, the Candidates shall verify the data filled
+      and correct it if required. The candidate shall take printout of the form and
+      sign it. \n5. This is followed by the confirmation of Online Application Form
+      and Document Verification at Facilitation Centre by the Candidate in person.
+      \n6. Display or Publishing of Provisional merit list, Submission of grievances,
+      if any, and Display or Publishing of Final Merit Lists \n7. Online Submission
+      & Confirmation of Option Form of CAP rounds \n8. Reporting to the Admission Reporting
+      Centre (ARC) as per Allotment of CAP Round \n9. Reporting to the Allotted Institute
+      and Confirmation of Admission by submitting required documents and payment of
+      fee after CAP Round However DTE Maharashtra will be publishing applicable notifications
+      in this regard from time to time, hence you can keep visiting State Common Entrance
+      Test Cell, Maharashtra State website (http://cetcell.mahacet.org) for relevant
+      information and latest updates and information brochure"
+  utter_approval:
+  - text: "Approvals and Accreditation  \n1. Approved by AICTE Government of Maharashtra\n2. Affiliated to Savitribai Phule Pune University, Pune (Formerly University
+      of Pune).\n3. Accredited by NAAC A++ (3.53 on 4 point scale highest in western
+      India).\n4. ISO 9001-2015 certified institute."
+  utter_ask_cet:
+  - text: Enter your CET Percentile (Put 0 if not appeared for the CET yet.)
+  utter_ask_contact:
+  - text: Enter your Contact Number
+  utter_ask_email:
+  - text: Enter your Email ID
+  utter_ask_name:
+  - text: Enter your Name
+  utter_ask_pcm:
+  - text: Enter your PCM Score out of 300
+  utter_ask_jee:
+  - text: Enter your JEE Perecentile (Put 0 if not appeared for JEE)
+  utter_branch_transfer:
+  - text: No. There is no provision for branch transfer in Vishwakarma Institute of
+      Technology, Pune.
+  utter_campus_placement_assistance:
+  - text: Every year 120+ companies visit to our campus for recruitment. Average placement
+      percentage is 85% every year. Internship percentage is 100% every year. Campus placements with high success rate.
+  utter_company_info:
+  - text: Amazon, Flipchart, Google, Apple,  Facebook, Samsung, NVIDIA , Microsoft,
+      IBM, Accenture, acebook, Intel, Samsung, Lenovo, Adobe, MoTek Technologies Ola,
+      Uber, PCO Innovation, Rakuten Marketing, Wells Fargo, ToMToM, Xoriant , Avaya,
+      Morgan Stanley, Siemens, Symantec, Airtel , NVidia, TIFR, Wolters Kluwer Financial
+      Services, J P Morgans, Mathworks, InfoGen Labs, Mobiliya, Simens, Persistent,
+      Hexanika, OpexAI, Lenovo, HDFC Bank,FMGC, Snapdeal, ISRO, Whatsapp, LinkedIn,
+      CISCO, Barclays, GSlab, HSBC, Quick Heal, Symantec, Government Sectors and Many
+      More.
+  utter_compare:
+  - text: "\nAI & Data Science have Specialized courses with Core of CSE & IT  as compared
+      to CSE/IT have Generalized courses-broad spectrum AI & Data Science have professional
+      skills of CSE/IT like Analytical skills, Creativity, Problem-solving skills,
+      Critical thinking skills Self Learning, etc and additional Data Driven Problem-solving
+      skills, Mathematics and Algorithms Knowledge, Cognitive Computing skills. \nCSE/IT
+      have packages ranging Rs. 5 Lakh to 30 Lakh Average Salary-10 Lakh. AI & Data
+      Science have packages Rs. 8 Lakh to 35 Lakh Average Salary-12 Lakh. Equal MS
+      opportunities are available for CSE/IT and AI & DS Engineer. \nTremendous opportunities
+      available post COVID for Startups in AI & DS ( Automation) AI & DS have impact
+      on large spectrum like Healthcare, Automotive, Financial Services, Retail, Technology,
+      Manufacturing, Energy, Transport and Logistics, Robotics etc. \nNasscom  in collaboration
+      with Niti Aayog's Atal Innovation Mission (AIM), launched an artiﬁcial intelligence
+      (AI) based module for students of Indian schools, national  AI portal-www.ai.gov.in."
+  utter_counselling:
+  - text: YES, Counselling in the presence of candidate is compulsory. You need not
+      carry any original or photocopied documents, but for very specific or critical
+      queries such documents are necessary for counseling. Otherwise you should be
+      handy with your HSC and CET/JEE marks. But you are advised to carefully read
+      guidelines issued by State Cet Cell time to time.
+  utter_courses_info_pg:
+  - text: "1. MTech in Heat PowerEngineering\n2. MTech in Design Engineering\n3. MTech\
+      \ in Computer Science and Engineering\n4. MTech in ProcessInstrumentation\n\
+      5. MTech in Chemical Engineering\n6. MTech in Electronics & Telecommunication\
+      \ Engineering\n7. Master in Computer Applications (M.C.A.)\n"
+  utter_courses_info_phd:
+  - text: "1) PhD in Mechanical Engineering\n2) PhD in Chemical Engineering\n3) PhD\
+      \ in Industrial Engineering\n4) PhD in Instrumentation & Control Engineering\n\
+      5) PhD in Electronics & Telecommunication Engineering\n6) PhD in Computer Engineering\n"
+  utter_courses_info_ug:
+  - text: "1. BTech in Chemical Engineering\n2. BTech in Computer Engineering\n3. BTech in Electronics & Telecommunication Engineering\
+      \ \n4. BTech in Artificial Intelligence and Data Science\
+      \ Engineering\n5. BTech in Information Technology\n6. BTech in Instrumentation\
+      \ & Control Engg\n7. BTech in Mechanical Engineering \n\
+      8. BTech in Production Engineering\n"
+  utter_duration:
+  - text: BTech in Artificial Intelligence and Data Science Engineering (AI & DS)
+      course is 4 year Full Time Degree course.
+  utter_education_loan:
+  - text: In case if a candidate is applying for a loan, s/he needs to confirm the
+      admission by paying complete fees, as applicable. Once college starts you can
+      approach Studentsâ€™ section and/or accounts section to get the required documents
+      as may be specified by respective banks. As and when college gets the fees from
+      the bank, college will reimburse the fees to the candidate.
+  utter_eligibility:
+  - text: "The admission of F.Y B. Tech. students in Vishwakarma Institute of Technology,
+      Pune \n (A) For Maharashtra State candidate \n(i) Passed HSC or its equivalent examination
+      with Physics and Mathematics as compulsory subjects along with one of the Chemistry
+      or Biotechnology or Biology or Technical or Vocational subjects, and obtained
+      at least 50% marks (at least 45% marks, in case of Backward class categories
+      and Persons with Disability candidates belonging to Maharashtra State only)
+      in the above subjects Or taken together; (ii) Passed Diploma in Engineering
+      and Technology and obtained at least 50% marks (at least 45% marks, in case
+      of Backward class categories and Persons with Disability candidates Or belonging
+      to Maharashtra State only); (iii) Passed B.Sc. Degree from a Recognized University
+      as defined by UGC and obtained at least 50% marks (at least 45% marks, in case
+      of Backward class categories and Persons with Disability candidates belonging
+      to Maharashtra State only); (iv) Obtained score in MHT-CET 2020 conducted by
+      the Competent Authority. \n(B) All India Candidature Candidates, Jammu and Kashmir
+      Migrant Candidates \n(i) The Candidate should be an Indian National; (ii) Passed
+      HSC or its equivalent examination with Physics and Mathematics as compulsory
+      subjects along with one of the Chemistry or Biotechnology or Biology or Technical
+      or Vocational subjects and obtained at least 50% marks (at least 45% marks,
+      in case of Backward class categories and Persons with Disability candidates
+      belonging to Maharashtra State only) Or in the above subjects taken together;
+      (iii) Passed Diploma in Engineering and Technology and obtained at least 50%
+      marks (at least 45% marks, in case of Backward class categories and Persons
+      with Disability candidates Or belonging to Maharashtra State only); (iv) Passed
+      B.Sc. Degree from a Recognized University as defined by University Grants Commission
+      and obtained at least 50% marks (at least 45% marks, in case of Backward class
+      categories and Persons with Disability candidates belonging to Maharashtra State
+      only); (v) Obtained score in MHT-CET 2020 or JEE 2020 Main Paper I. For any
+      other information details please refer the website of State Common Entrance
+      Test Cell, Maharashtra State website (http://cetcell.mahacet.org)"
+  utter_facilities:
+  - text: "\nOn campus, students have well furnished classrooms, laboratories, language
+      labs, library, internet lab, Wi-Fi, canteen, fruit stall, reprographic section,
+      gymkhana, sports centre, cultural centre, auditorium, placement cell, bank and
+      much more.\nExpert Faculty members in AI and DS domain. \nExperential learning through project based curriculum i.e. 1 course project per semester per subject. \nWe have lots of facilities available like Innovation labs of Dassault
+      systems and Nvidia at our campus, centers of excellence in Data Science, Machine Learning, Deep Learning, Computer vision and software development.\nSigned MOUs with Multinational Corporations such as TomTom,
+      Xoriant, Hexanika, IoTIoT.in, John Deere, IIT, etc.  \nIndustry oriented curriculum and industrial visits. Many Guest lectures, Workshops and Training Programs. \nVarious Active technical chapters like CSI, ACM and IEEE
+      also we have our own enterprenership development cell(ED). \nVarious Coding clubs like GEdit coding club, Google developer student club and many more."
+  utter_fee:
+  - text: For fee structure for AI & DS you can visit you http://www.vit.edu/index.php/admissions/fees-structure
+  utter_fee_payment_foreign_nationals_nri:
+  - text: The fee is to be paid in India Rupees only.
+  utter_fee_structure_foreign_nationals_nri:
+  - text: Fees structure is different for foreign nationals and is decided by Hon.
+      Shikshan Shulka Samiti of Maharashtra state. Vishwakarma Institute of Technology,
+      Pune abides to their rules.
+  utter_foreign_nationals:
+  - text: There are 15% seats over and above the sanction intake are reserved for
+      foreign nationals and are filled in by Pune University admissions section/DTE
+      Maharashtra state.
+  utter_future_study:
+  - text: Artificial intelligence (AI) promises to deliver some of the most significant and disruptive innovations of this century. Self-driving cars, robotic assistants, and automated disease diagnosis are all products of an emerging AI revolution that will reshape how we live and work. And with demand for talented AI and DS engineers more than doubling in the last few years, there are limitless Job opportunities for professionals who want to work on the cutting edge of AI research and development in several companies. Students who wants to study further abroad have Equal MS opportunities are available for CSE/IT and AI & DS Engineer. Most
+      of the top universities are offering MS in AI & DS.
+  utter_girls_hostel:
+  - text: Yes. Girls are provided with separate hostel facilities. Food facility is
+      also available
+  utter_goodbye:
+  - text: Bye, Thank You for Interaction. I am a virtual chatbot, Powered by students of department of IT&MCA, VIT.For further details please visit our
+      website (www.vit.edu).For personal enquiry visit to our admission counseling
+      office on Monday to Saturday. during 10 am.to 5 pm. Contact us on telephone
+      020-24202180 For more details you can mail us on admissions@vit.edu
+  utter_government_opportunities:
+  - text: The government has launched a national Artificial Intelligence portal-www.ai.gov.in.
+      Nasscom, in collaboration with Niti Aayog's Atal Innovation Mission (AIM), launched
+      an artiﬁcial intelligence (AI) based module for students of Indian schools.
+  utter_greet:
+  - text: Hey! Welcome to the Chatbot powered by Artifical Intelligence and Data Science
+      Deparment of Vishwakarma Institute of Techology. Please fill the following form;
+  utter_hostel:
+  - text: Although Vishwakarma Institute of Technology, Pune does not have residential
+      campus, but provides limited hostel facilities to students. Hostels are located
+      merely in the range of 2-3 Km from Institute. Preference is given to first year
+      students for hostel admissions on first come first serve basis. Contact details
+      to hostel warden are given on Institute website or one may get details by communicating
+      in students section of the Institute or from the admissions counseling cell
+      whose numbers are displayed on website. Food facility is available in all hostels.
+  utter_hostel_fees:
+  - text: For details please visit our website (www.vit.edu) or Contact us on telephone
+      020-24202180
+  utter_iamabot:
+  - text: 'I am a virtual chatbot, Powered by students of department of IT&MCA, VIT.For further details please visit our
+      website (www.vit.edu).For personal enquiry visit to our admission counseling
+      office on Monday to Saturday. during 10 am.to 5 pm. Contact us on telephone
+      020-24202180 For more details you can mail us on admissions@vit.edu '
+  utter_institute_contact:
+  - text: For further details, one should keep screening State Common Entrance Test
+      Cell, Maharashtra State website (http://cetcell.mahacet.org) and also Vishwakarma
+      Institute of technology website (www.vit.edu). ➢ For personal enquiry visit
+      to our admission counseling office on Monday to Saturday. during 10 am. to 5
+      pm. Contact us on telephone 020-24202180 For more details you can mail us on
+      admissions@vit.edu
+  utter_institute_information:
+  - text: Vishwakarma Institute of Technology is an Autonomous Engineering Institute
+      affiliated to Savitribai Phule Pune University. The Institute is run by Bansilal
+      Ramnath Agarwal Charitable Trust. It is one of the premier Engineering Institute
+      of high repute in the country. The Institute was established in 1983 and during
+      the journey of last three decades has grown up from an Under-Graduate Institute
+      to an Institute offering a variety of UnderGraduate, Post-Graduate and Research
+      programs. Vishwakarma Institute of Technology is the first private, unaided
+      engineering Institute in the state of Maharashtra to be granted Academic Autonomy.
+  utter_own_CET:
+  - text: No. Vishwakarma Institute of Technology, Pune does not conduct its own entrance
+      examination. Admissions are given strictly according to the rules of DTE Maharashtra.
+  utter_program_design:
+  - text: At Vishwakarma Institute of Technology, Pune, a choice based credit system
+      with continuous evaluation is followed in semester pattern
+  utter_quality_education:
+  - text: Accrediting bodies like National Assessment & Accreditation Council (NAAC)
+      and National Board of Accreditation (NBA) both constituted by UGC and MHRD look
+      after and assesses the quality of education delivered by the Institute. Vishwakarma
+      Institute of Technology has received accreditation from both and remains to
+      continue for the same in future.
+  utter_quota:
+  - text: For all branches 20% seats of sanctioned intake are available for Management
+      Quota admission as per the norms set by DTE Maharashtra. For detailed information
+      please visit our admission counseling office at Vishwakarma Institute Of Technology,
+      Pune from Monday to Saturday in between 10 am to 5 pm.
+  utter_reach_vit:
+  - text: Vishwakarma Institute of Technology, Pune is located within Pune city.The
+      campus is accessible by public as well as private transport facilities. Pune
+      municipal corporation buses operate from different parts of the city to Upper
+      Indira Nagar (Upper Depot). Frequent buses are available from Swargate depot
+      to reach VIT, Pune campus. One has to alight at Vishwakarma Institute of Technology,
+      Pune stop to reach to campus. Complete campus address is available on institute
+      website. https://goo.gl/maps/nYmpnnjnCQ66Pxts9
+  utter_roles_information:
+  - text: AI & DS Engineer-Software developer, Database Administrator, Information
+      Security Analyst, Full Stack Developer, Computer Systems Analyst, Network Security
+      Engineer, System Developer, Computer Programmer, Business Analyst, Network administrator,
+      Computer Network Architect, Principal Architect, Data Engineer, Data Analyst,
+      Data Scientist, Principal Data Scientist, Machine Learning  Engineer, Data Engineer/Data
+      Architect, Research Engineer, Algorithm Engineer, Machine Learning Analyst,
+      Computer Vision Engineer, Data Sciences Lead, Data Manager, Machine Learning
+      Scientist etc.
+  utter_salary_package:
+  - text: "Estimated Salary as per current Market Analysis AI & DS Engineer Packages - 8 to 35 Lakhs\nAverage Package - 12 Lakhs\n"
+  utter_seat_allotment:
+  - text: NO. Since entire admission process is online. Seat allotment is also online
+      on merit basis in scheduled counseling rounds.
+  utter_student_facilities:
+  - text: On campus, students have well furnished classrooms, laboratories, language
+      labs, library, internet lab, Wi-Fi, canteen, fruit stall, reprographic section,
+      gymkhana, sports centre, cultural centre, auditorium, placement cell, bank and
+      much more. Vishwakarma Institute of Technology, Pune is located within Pune
+      city. The campus is accessible by public as well as private transport facilities.
+      Pune municipal corporation buses operate from different parts of the city to
+      Upper Indira Nagar (Upper Depot). Frequent buses are available from Swargate
+      depot to reach VIT, Pune campus. One has to alight at Vishwakarma Institute
+      of Technology, Pune stop to reach to campus. Complete campus address is available
+      on institute website
+  utter_subject:
+  - text: For Syllabus for AI & DS please do visit http://www.vit.edu/
+  utter_submit:
+  - text: "The following responses are stored :\n - Name: {name}\n - Contact Number:\
+      \ {contact}\n - Email Id: {email}\n - PCM Score: {pcm}\n - CET Score: {cet}\n - JEE Percentile: {jee}\n
+      \ Thank You. How may I assist you further?"
+  utter_transport_facility:
+  - text: Yes. Transportation facility is available only for hostel students.
+  utter_wrong_cet:
+  - text: ERROR - Please enter score out of 100. Try again.
+  utter_wrong_contact:
+  - text: ERROR - Contact number should contain only 10 digits.
+  utter_wrong_email:
+  - text: ERROR - Invalid Email. Try again.
+  utter_wrong_name:
+  - text: ERROR - Invalid Name. Try again.
+  utter_wrong_pcm:
+  - text: ERROR - Please enter score out of 300. Try again.
+  utter_wrong_jee:
+    - text: ERROR - Try again.
+  utter_mode:
+  - text: 'Fees can paid in both ways offline as well as online, for more details
+      please visit our website (www.vit.edu) or Contact us on telephone 020-24202180
+      or you can visit our admin office or you can mail us on admissions@vit.edu  '
+  utter_documents:
+  - text: "1. 12th Marksheet\n2. 10th Marksheet\n3. CET scorecard\n4. Leaving Certificate\n\
+      5. Transfer Certificate if applicable\n6. Gap certificate if applicable\n7.\
+      \ Domicile certificate\n8. Caste certificate if applicable.\n"
+  utter_AI:
+  - text: Artificial intelligence (AI) refers to the simulation of human intelligence
+      in machines that are programmed to think like humans and mimic their actions.
+      The term may also be applied to any machine that exhibits traits associated
+      with a human mind such as learning and problem-solving. The ideal characteristic
+      of artificial intelligence is its ability to rationalize and take actions that
+      have the best chance of achieving a specific goal.
+  utter_DS:
+  - text: Data science is the study of data. It involves developing methods of recording,
+      storing, and analyzing data to effectively extract useful information. The goal
+      of data science is to gain insights and knowledge from any type of data — both
+      structured and unstructured.
+  utter_degree_awarding:
+  - text: As VIT is autonomus institution affiliated with Savitribai Phule Pune University(SPPU previously called as Pune University), Degree is awarded by the Pune Universty itself.
+  utter_normal_pandemic_teaching:
+  - text: To ensure everyones safety during the pandemic situation like Covid-19, We are conducting lectures online. As soon as situation will get normal we'll conduct regular lectures at our campus.
+  utter_Extra_Curricular:
+  - text: As, VIT we extensively support Extra Curricular activities like sports and college festivals like Melange and Vishwakarandak. We have about 60 different clubs of various hobbies like singing, dancing and arts etc.
+  utter_student_achievement:
+  - text: "Many Patents and publications in SCI & Scopus indexed journals.
+      \n• AI-DS based startup by student Sushmita Kaneri-Arishti Cyber Tech Pvt. Ltd.
+      \n• Developed software for ISKCON RASAS School by TY students
+      \n• TY and SY students developed ‘IIRADA’ (Indian Integrated Rural Advancement and Development
+      Assistance) tool.
+      \n• Harshada Salunke got a meritorious scholarship of Rs. 3 Lakhs from Lila Poonawala Foundation & Persistent
+      \n• Sunita Patil from SY got a meritorious scholarship of Rs. 2 Lakhs from Lila Poonawala Foundation
+      \n• Shantanu Sontakke and team from SY received a funding of Rs. 1.5 Lakhs from the IEEE Humanitarian
+      Activities Committee for their Covid-19 project
+      \n• Sanket Bijawe and team from SY received the second runner up award in ‘Build for Digital India’
+      program organized by Google and the Ministry of Electronics & Information Technology
+      \n• Team NEO with COVID Augmented Reality Workout/ Informative Game bagged the 2nd rank in
+      HackRx Hackathon by Bajaj Finserv
+      \n• Publishsutra was declared the first runner up in One Million Seconds Non-Stop Online
+      Hackathon organized by the Telangana State Innovation Cell, Telangana Information
+      Technology Association
+      \n• VIT Team got the first prize in MHRD - Samadhan Hackathon
+      \n• The team won the second prize in Data Science Hackathon conducted by IISc Bangalore
+      \n• First prize in Wie Hack 2.0 an all-women 36-hour online hackathon
+      \n• Ganesh Tarone got an internship along with lifetime working opportunities at Einsteinpy
+      under OpenAstronomy
+      \n• The college received many prestigious awards from reputed institutes"
+  utter_pre_placement_training:
+  - text:  Special Efforts for Campus Placement and Entrepreneurship - Self
+      Development Program, Interview Preparation, Grooming Sessions and
+      Guidance from Alumni from reputed IT Industries, AMCAT aptitute test preparation
+
+  utter_default:
+  - text: "Sorry I din't understand. Please mention it clearly!"
+
+  utter_custom:
+  - text: "Sorry I din't understand. Please mention it clearly!"
+
+  utter_ask_affirmation:
+  - text: "Did you mean?"
+
+  utter_ask_rephrase:
+  - text: "Please rephrase again"
+
+actions:
+- utter_eligibility
+- utter_greet
+- utter_goodbye
+- utter_iamabot
+- utter_courses_info_ug
+- utter_courses_info_pg
+- utter_courses_info_phd
+- utter_salary_package
+- utter_government_opportunities
+- utter_company_info
+- utter_roles_information
+- utter_future_study
+- utter_institute_information
+- utter_institute_contact
+- utter_AIDS_intake
+- utter_hostel
+- utter_approval
+- utter_facilities
+- utter_duration
+- utter_compare
+- utter_fee
+- utter_subject
+- utter_CET
+- utter_own_CET
+- utter_admission_process
+- utter_application_process
+- utter_counselling
+- utter_seat_allotment
+- utter_OM
+- utter_quota
+- utter_quality_education
+- utter_program_design
+- utter_branch_transfer
+- utter_foreign_nationals
+- utter_fee_structure_foreign_nationals_nri
+- utter_fee_payment_foreign_nationals_nri
+- utter_campus_placement_assistance
+- utter_transport_facility
+- utter_girls_hostel
+- utter_hostel_fees
+- utter_student_facilities
+- utter_reach_vit
+- utter_education_loan
+- utter_ask_name
+- utter_wrong_name
+- utter_ask_contact
+- utter_wrong_contact
+- utter_ask_email
+- utter_wrong_email
+- utter_ask_pcm
+- utter_wrong_pcm
+- utter_ask_cet
+- utter_wrong_cet
+- utter_ask_jee
+- utter_wrong_jee
+- utter_submit
+- utter_mode
+- utter_documents
+- utter_AI
+- utter_DS
+- utter_degree_awarding
+- utter_normal_pandemic_teaching
+- utter_Extra_Curricular
+- utter_student_achievement
+- utter_pre_placement_training
+- action_custom_fallback
+- utter_custom
+
+forms:
+- admission_form
